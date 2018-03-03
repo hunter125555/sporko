@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sporko Registration Form</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "formcss.css" />
+</head>
+<body>
+    <form action="sporkophp.php"  method="post" enctype="multipart/form-data">
+
+<div class="form-style-10">
+
+<h1>Register Your Player</h1>
+<form>
+    <div class="section"><span>1</span>Primary Details</div>
+    <div class="inner-wrap">
+       <!--<label>Player Id<input type="Number" name="idsporko" required/></label>!-->
+        <l1>First Name<input type="text" name="fname" required/></l1>
+        <l1>Last Name <input type="text" name="lname" required/></l1>
+        <l1>Date of Birth <input type="date" name="dob" required/></l1> 
+        <l2>Sex<input type="text" list="sex" required />
+              <datalist id="sex">
+                 <option>Male</option>
+                 <option>Female</option> 
+              </datalist> 
+        </l2>
+        <l2>Jersey Size <select name="sizelist" form="sizeform" required>
+   <option value="blank"></option>
+  <option value="24">24</option>
+<option value="26">26</option>
+  <option value="28">28</option>
+  <option value="30">30</option>
+  <option value="32">32</option>
+  <option value="34">34</option>
+  <option value="36">36</option>
+  <option value="38">38</option>
+
+</select> </l2>
+
+        <l2>Primary Number <input type="text" name="mobile" required/></l2>
+        <l2>Alternate Number <input type="text" name="amobile" required/></l2>
+        <l2>Contact Name <input type="text" name="person" required/></l2>
+        <label>Email<input type="email" name="email" required/></label>
+        <label>Medical Condition<textarea name="medical" required></textarea> </label>
+        <label>Address <textarea name="address" required></textarea> </label> <br>
+        <l1>Image <form action="/action_page.php">
+          Select a file: <input type="file" name="img">
+        </l1>  
+        
+    </div>
+
+    <div class="section"><span>2</span>Fees and Registration Detail</div>
+    <div class="inner-wrap">
+        <l1>Registration Date <input type="date" name="regisdate" required/></l1>
+        <l1>Fees Paid On<input type="date" name="feedate" required/></l1>
+        <l2>Total Fees Expected<input type="text" name="feeex" required/></l2>
+        <l2>No of Months<input type="number" name="months" required/></l2>
+        <l2>No of Days in a week<input type="number" name="days" required/></l2>
+        <l2>Fees Paid<input type="text" name="feepaid" required/></l2>
+        <l2>Discount<input type="number" name="discount" value="0" required/></l2>
+        
+        <l2>Batch<input type="text" list="batch1" required/>
+              <datalist id="batch1">
+                 <option>Monday 8-9 AM</option>
+                 <option>Monday 6-7 PM</option>
+                 <option>Monday 7-8 PM</option>
+                 <option>Tuesday 6-7 PM</option>
+                 <option>Tuesday 7-8 PM</option>
+                 <option>Wednesday 8-9 AM</option>
+                 <option>Wednesday 6-7 PM</option>
+                 <option>Wednesday 7-8 PM</option>
+                 <option>Thursday 6-7 PM</option>
+                 <option>Thursday 7-8 PM</option>
+                 <option>Friday 8-9 AM</option>
+                 <option>Friday 6-7 PM</option>
+                 <option>Friday 7-8 PM</option>
+                 <option>Saturday 2-3 PM</option>
+                 <option>Saturday 3-4 PM</option> 
+                 <option>Saturday 4-5 PM</option>
+                 <option>Sunday 8-9 AM</option>
+                 <option>Sunday 11 AM-12PM</option>
+              </datalist></l2>
+              <l2>Batch<input type="text" list="batch2" required />
+              <datalist id="batch2">
+                 <option>Monday 8-9 AM</option>
+                 <option>Monday 6-7 PM</option>
+                 <option>Monday 7-8 PM</option>
+                 <option>Tuesday 6-7 PM</option>
+                 <option>Tuesday 7-8 PM</option>
+                 <option>Wednesday 8-9 AM</option>
+                 <option>Wednesday 6-7 PM</option>
+                 <option>Wednesday 7-8 PM</option>
+                 <option>Thursday 6-7 PM</option>
+                 <option>Thursday 7-8 PM</option>
+                 <option>Friday 8-9 AM</option>
+                 <option>Friday 6-7 PM</option>
+                 <option>Friday 7-8 PM</option>
+                 <option>Saturday 2-3 PM</option>
+                 <option>Saturday 3-4 PM</option> 
+                 <option>Saturday 4-5 PM</option>
+                 <option>Sunday 8-9 AM</option>
+                 <option>Sunday 11 AM-12PM</option>
+              </datalist></l2>
+              <l2>Batch<input type="text" list="batch3" required />
+              <datalist id="batch3">
+                 <option>Monday 8-9 AM</option>
+                 <option>Monday 6-7 PM</option>
+                 <option>Monday 7-8 PM</option>
+                 <option>Tuesday 6-7 PM</option>
+                 <option>Tuesday 7-8 PM</option>
+                 <option>Wednesday 8-9 AM</option>
+                 <option>Wednesday 6-7 PM</option>
+                 <option>Wednesday 7-8 PM</option>
+                 <option>Thursday 6-7 PM</option>
+                 <option>Thursday 7-8 PM</option>
+                 <option>Friday 8-9 AM</option>
+                 <option>Friday 6-7 PM</option>
+                 <option>Friday 7-8 PM</option>
+                 <option>Saturday 2-3 PM</option>
+                 <option>Saturday 3-4 PM</option> 
+                 <option>Saturday 4-5 PM</option>
+                 <option>Sunday 8-9 AM</option>
+                 <option>Sunday 11 AM-12PM</option>
+              </datalist></l2>
+
+
+
+
+    </div>
+
+    <div class="section"><span>3</span>Additional Details</div>
+        <div class="inner-wrap">
+        <label>Extensions <input type="number" name="extension" /></label>
+        <label>Comment <textarea name="comment"/></textarea></label>
+        <l1>Payment<select name="corc" form="paymentform" required>
+           <option value="cash">Cash</option>
+           <option value="cheque">Cheque</option>
+           <option value="neft">NEFT</option> </select> </l1>
+
+        <l2>Payment No <input type="text" name="paydetails" ></l2>
+        <l2>Invoice Details <input type="text" name="invoiceno"></l2>
+        <l2>Registration Fee <select name="feelist" form="feeform" required>
+            <option value="no">No</option>
+             <option value="yes">Yes</option> </select> </l2>
+
+
+    </div>
+   <div class="button-section">
+     <input type="submit" name="Sign Up" />
+  <!--   <span class="privacy-policy">
+     <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+     </span>
+    </div> !-->
+</form>
+</div>
+
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.form-style-10{
+    width:450px;
+    padding:30px;
+    margin:40px auto;
+    background: #FFF;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+    padding: 10px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.form-style-10 h1{
+    background: #2A88AD;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+    display: block;
+    margin-top: 2px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+    display: block;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #888;
+    margin-bottom: 15px;
+}
+.form-style-10 l1{
+    display: inline-block;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.form-style-10 l2{
+    display: inline-block;
+    width: 30%; 
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+
+
+
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+    font: normal 20px 'Bitter', serif;
+    color: #2A88AD;
+    margin-bottom: 5px;
+}
+.form-style-10 .section span {
+    background: #2A88AD;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
+}
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+    background: #2A6881;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+    float: right;
+    width: 250px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #4D4D4D;
+    margin-top: 10px;
+    text-align: right;
+}
+</style>
+</body>
+</html>
